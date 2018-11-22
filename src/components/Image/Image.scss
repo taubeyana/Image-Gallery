@@ -1,0 +1,13 @@
+.image img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    // vertical-align: middle;
+    height: 100%;
+}
+.image {
+    height: 400px;
+    width: 250px;
+    overflow: hidden;
+    margin: 5px;
+}
