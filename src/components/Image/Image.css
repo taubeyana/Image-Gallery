@@ -1,11 +1,30 @@
-.image img {
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  height: 100%; }
-
 .image {
   height: 400px;
   width: 250px;
   overflow: hidden;
-  margin: 5px; }
+  margin: 10px;
+  border: 10px solid white;
+  box-sizing: border-box;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 5px 5px rgba(0, 0, 0, 0.24);
+  position: relative; }
+  .image:hover img {
+    filter: grayscale(100%); }
+  .image:hover .image-descr {
+    height: 20%; }
+  .image img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    height: 100%; }
+  .image .image-descr {
+    height: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: black;
+    background: white;
+    transition: all 0.1s ease-in; }
+    .image .image-descr span {
+      padding: 10px 0;
+      display: inline-block; }

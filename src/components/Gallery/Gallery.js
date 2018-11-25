@@ -2,7 +2,8 @@ import React, { Component }  from 'react';
 import { connect } from 'react-redux';
 import './Gallery.css';
 import Image from '../Image/Image';
-import { getImagesFromServer, incrementPageNumber } from '../../store/actions'
+import { getImagesFromServer, incrementPageNumber } from '../../store/actions';
+import { ClipLoader } from 'react-spinners';
 
 class Gallery extends Component {
     constructor(props) {
@@ -14,7 +15,7 @@ class Gallery extends Component {
     handleScroll = () => {
         if (window.innerHeight + 
             document.documentElement.scrollTop === 
-            document.documentElement.offsetHeight) {
+            document.documentElement.offsetHeight + 130) {
                 this.props.dispatch(incrementPageNumber());
                 this.props.dispatch(getImagesFromServer());
           }
@@ -25,7 +26,7 @@ class Gallery extends Component {
     render() {
         return (
             <div className = "gallery">
-                { this.props.isLoading ? <h1>Loading...</h1> : 
+                { this.props.isLoading ? <ClipLoader/> : 
                  this.props.images.map(image => 
                     <Image data = { image } key = { image.id }/>)
                 }

@@ -1,7 +1,8 @@
 import React, { Component }  from 'react';
 import { connect } from 'react-redux';
 import { setSearchValue, getImagesFromServer} from '../../store/actions'
-// import './Search.css';
+import SearchIcon from '@material-ui/icons/Search';
+import './Search.css';
 
 class Search extends Component {
     constructor(props) {
@@ -15,14 +16,14 @@ class Search extends Component {
     }
     render() {
         return (
-            <div>
+            <div className = 'search'>
+                <SearchIcon />
                 <input 
                     onChange = { this.handleChange } 
                     ref = { this.searchValue }>
                 </input>
             </div>
         ) 
-
     }
 } 
 export default connect()(Search);

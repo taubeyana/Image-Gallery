@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-// import './App.css';
+import './App.css';
 import { Provider } from 'react-redux';
 import Header from './components/Header/Header';
 import Gallery from './components/Gallery/Gallery';

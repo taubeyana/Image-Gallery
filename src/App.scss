@@ -1,33 +1,44 @@
-// @import './variables';
+@import './variables';
 
-// body, h1, button, p {
-//     margin: 0;
-//     padding: 0;
-//     border: none;
-// }
-// body {
-//     background: $darkBackground;
-//     font-family: Verdana, Geneva, Tahoma, sans-serif;
-//     color: #343C3E;
-// }
-// input, textarea {
-//     border: none;
-//     outline: none;
-//     font: inherit;
-//     resize: none;
-//   }
+body, h1, button, p {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: inherit;
+}
+
+input, textarea {
+    border: none;
+    outline: none;
+    font: inherit;
+    resize: none;
+    background: inherit;
+  }
   
-//   button {
-//     border: none;
-//     margin: 0;
-//     padding: 0;
-//     width: auto;
-//     overflow: visible;
-//     outline: none;
-//     background: transparent;
-//     color: inherit;
-//     font: inherit;
-//     cursor: pointer;
-//     line-height: normal;
-//   }
+  button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    outline: none;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    line-height: normal;
+  }
+
+  body {
+    background: $mainBackground;
+    font-family: Helvetica, Arial, sans-serif
+
+
+  }
+  .header {
+    background: $lightBackground;
+    color: $mainFontBlue;
+
+
+  }
   

@@ -10,7 +10,7 @@ const initialState = {
     images: [],
     searchValue: 0,
     isLoading: true,
-    pageNumber: 1
+    pageNumber: 2
 }
 
 const rootReducer = (state = initialState, action) => {
@@ -19,7 +19,7 @@ const rootReducer = (state = initialState, action) => {
             return ({
                 ...state, 
                 searchValue: action.payload,
-                pageNumber: 1
+                pageNumber: 2
             })
         case SET_FETCH_STATUS:
             return ({

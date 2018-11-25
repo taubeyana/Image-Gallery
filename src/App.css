@@ -1,0 +1,33 @@
+body, h1, button, p {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: inherit; }
+
+input, textarea {
+  border: none;
+  outline: none;
+  font: inherit;
+  resize: none;
+  background: inherit; }
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  outline: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  line-height: normal; }
+
+body {
+  background: #98ccd3;
+  font-family: Helvetica, Arial, sans-serif; }
+
+.header {
+  background: #ebf0f6;
+  color: #364e68; }

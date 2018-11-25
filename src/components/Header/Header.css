@@ -1,0 +1,28 @@
+.header {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 20px; }
+  .header h1 {
+    font-size: 45px;
+    line-height: 50px;
+    margin: 0 20px;
+    background: inherit; }
+  .header span {
+    font-size: 18px;
+    font-style: italic; }
+  .header .logo {
+    height: inherit; }
+  .header .logo-wrapper {
+    margin: 5px 30px;
+    height: 80%;
+    display: flex;
+    align-items: center; }
+  .header .text-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }

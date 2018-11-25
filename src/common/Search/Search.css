@@ -1,0 +1,11 @@
+.search {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 5px;
+  background: white;
+  margin: 0 30px; }
+  .search:focus-within {
+    border: solid 2px lightblue; }
+  .search input {
+    padding: 5px; }
