@@ -13,8 +13,8 @@ class Gallery extends Component {
           };
     }
     handleScroll = () => {
-        if (window.innerHeight + 
-            document.documentElement.scrollTop === 
+        if (Math.round(window.innerHeight + 
+            document.documentElement.scrollTop) === 
             document.documentElement.offsetHeight + 130) {
                 this.props.dispatch(incrementPageNumber());
                 this.props.dispatch(getImagesFromServer());

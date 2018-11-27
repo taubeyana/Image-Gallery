@@ -19,6 +19,7 @@ class Search extends Component {
             <div className = 'search'>
                 <SearchIcon />
                 <input 
+                    placeholder = 'Search...'
                     onChange = { this.handleChange } 
                     ref = { this.searchValue }>
                 </input>

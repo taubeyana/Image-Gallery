@@ -6,7 +6,6 @@ export const CLEAR_IMAGES = "CLEAR_IMAGES";
 export const SET_FETCH_STATUS = "SET_FETCH_STATUS";
 export const INCREMENT_PAGE_NUMBER = "INCREMENT_PAGE_NUMBER";
 
-
 export const setSearchValue = (payload) => ({
     type: SET_SEARCH_VALUE,
     payload
@@ -40,7 +39,7 @@ export const getImagesFromServer = () => {
         axios.get(`https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=bac9f1ccfd854f27894fd47c4f01b1e8&text=${searchValue}&per_page=${totalImages}&page=${pageNum}&content_type=1&is_getty=1&format=json&nojsoncallback=1`)
         .then(res => nextImages = [...res.data.photos.photo])
         .then(data => {
-            if (searchValue && pageNum === 1 ) dispatch(clearImages())
+            if (searchValue && pageNum === 2 ) dispatch(clearImages())
             dispatch(getImages(data))
             dispatch(setFetchStatus(false))
         })
