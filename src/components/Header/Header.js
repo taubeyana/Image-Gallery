@@ -9,8 +9,7 @@ const Header = () => {
         <div className = 'logo-wrapper'> 
             <img src = { logo } alt= 'logo' className = 'logo' />
             <div className = 'text-wrapper'> 
-                <h1> venn </h1>
-                <span> Image Gallery </span>
+                <h1> Image Gallery </h1>
             </div>
         </div>
         <Search/>
